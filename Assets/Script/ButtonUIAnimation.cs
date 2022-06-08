@@ -9,7 +9,6 @@ public class ButtonUIAnimation : MonoBehaviour,IPointerDownHandler,IPointerUpHan
     [SerializeField] private Image _img;
     [SerializeField] private Sprite _default, _pressed;
     [SerializeField] private AudioClip _compressClip;
-    [SerializeField] private AudioClip _uncompressClip;
     [SerializeField] private AudioSource _source;
 
     public void OnPointerDown(PointerEventData eventData)
@@ -21,6 +20,5 @@ public class ButtonUIAnimation : MonoBehaviour,IPointerDownHandler,IPointerUpHan
     public void OnPointerUp(PointerEventData eventData)
     {
         _img.sprite = _default;
-        _source.PlayOneShot(_uncompressClip);
     }
 }
