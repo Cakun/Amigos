@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class ShowCredits : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Animator _bounceCredits;
+
     void Start()
     {
-        
+        _bounceCredits = GetComponent<Animator>();
+    }
+    public void BounceCredits()
+    {
+        _bounceCredits.SetTrigger("ClickShow");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BounceSettings()
     {
-        
+        _bounceCredits.SetTrigger("SettingShow");
+    }
+
+    public void BounceMainMenu()
+    {
+        _bounceCredits.SetTrigger("MainMenuShow");
     }
 }
