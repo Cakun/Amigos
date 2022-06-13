@@ -13,6 +13,7 @@ public class InteractionSystem : MonoBehaviour
     public LayerMask detectionLayer;
 
     public string sceneName;
+    public Animator _animatorInput;
     public Animator transitionAnim;
 
     void Update()
@@ -39,6 +40,7 @@ public class InteractionSystem : MonoBehaviour
 
     IEnumerator LoadScene()
     {
+        _animatorInput.SetTrigger("isOpen");
         transitionAnim.SetTrigger("isChange");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
