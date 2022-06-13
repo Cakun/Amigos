@@ -12,7 +12,8 @@ public class InteractionSystem : MonoBehaviour
     //Detection Layer
     public LayerMask detectionLayer;
 
-    public string loadMap;
+    public string sceneName;
+    public Animator transitionAnim;
 
     void Update()
     {
@@ -20,14 +21,14 @@ public class InteractionSystem : MonoBehaviour
         {
             if (InteractInput())
             {
-                SceneManager.LoadScene(loadMap);
+                StartCoroutine(LoadScene());
             }
         }
     }
 
     bool InteractInput()
     {
-        return Input.GetKeyDown(KeyCode.E);
+        return Input.GetKeyDown(KeyCode.Z);
     }
 
     bool DetectObject()
@@ -36,6 +37,12 @@ public class InteractionSystem : MonoBehaviour
 
     }
 
+    IEnumerator LoadScene()
+    {
+        transitionAnim.SetTrigger("isChange");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneName);
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
