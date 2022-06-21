@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - grabbable
+  - Win
+  - Hijau
+  - Biru
   layers:
   - Default
   - TransparentFX
