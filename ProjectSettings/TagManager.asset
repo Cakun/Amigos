@@ -48,6 +48,9 @@ TagManager:
   - name: LevelUP
     uniqueID: 2536555945
     locked: 0
+  - name: Guide
+    uniqueID: 4108476321
+    locked: 0
   - name: Gate
     uniqueID: 3172898859
     locked: 0
