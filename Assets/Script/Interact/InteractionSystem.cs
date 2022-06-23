@@ -13,8 +13,10 @@ public class InteractionSystem : MonoBehaviour
     public LayerMask detectionLayer;
 
     public string sceneName;
-    public Animator _animatorInput;
     public Animator transitionAnim;
+    public Animator transitionLevel;
+    public GameObject _showSelect;
+    public GameObject _showSelect2;
 
     void Update()
     {
@@ -22,7 +24,10 @@ public class InteractionSystem : MonoBehaviour
         {
             if (InteractInput())
             {
-                StartCoroutine(LoadScene());
+                _showSelect.SetActive(true);
+                _showSelect2.SetActive(true);
+                transitionLevel.SetBool("isTransition", true);
+                return;
             }
         }
     }
@@ -38,9 +43,13 @@ public class InteractionSystem : MonoBehaviour
 
     }
 
+    public void LoadLevelScene()
+    {
+        StartCoroutine(LoadScene());
+    }
+
     IEnumerator LoadScene()
     {
-        _animatorInput.SetTrigger("isOpen");
         transitionAnim.SetTrigger("isChange");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);

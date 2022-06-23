@@ -24,4 +24,14 @@ public class ShowCredits : MonoBehaviour
     {
         _bounceCredits.SetTrigger("MainMenuShow");
     }
+
+    public void SlideLevelOut()
+    {
+        _bounceCredits.SetBool("isTransition", false);
+    }
+
+    public void SlideLevelIn()
+    {
+        _bounceCredits.SetBool("isTransition", true);
+    }
 }

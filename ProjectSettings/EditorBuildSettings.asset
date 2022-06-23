@@ -10,6 +10,9 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Splash Screen 2.unity
+    guid: d964e2b69966e2b4f8ffd1ec12b5ed1b
+  - enabled: 1
+    path: Assets/Scenes/Splash Screen 3.unity
     guid: 33b47076a1ae27f41a3cb4474b00678b
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
@@ -18,9 +21,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select.unity
     guid: fb2a8e93e43de064aa2cb10d64eba03e
   - enabled: 1
-    path: Assets/Scenes/StorryTelling.unity
-    guid: e1692e96bbb379c49b03e0c181183442
-  - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
+    path: Assets/Scenes/Level 1.unity
     guid: c361505d55bccca4796f0bea22fd7716
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 99315b163c10bff43aca77fafbfd1b2b
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 732b65d48500f17428c6058c84743564
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 3c4fceade5f71664ca50dc7a262a60a5
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: ee307db13eb16f5479fa9e423c946ee4
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: aa6487953e2c4d74f9916e9ec0436fb0
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: a34c2afe139b4f943b2806fcec2e83a5
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: 9dc4aa666a2828844815186807ac82ff
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: 71e152261160b774dab00c3230f29714
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: 104317d58ca16864a8d829304702de80
   m_configObjects: {}

@@ -5,14 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - grabbable
+  - Gate
+  - Lose
   - Win
-  - Hijau
-  - Biru
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - item
@@ -22,11 +22,11 @@ TagManager:
   - Object
   - Main Menu
   - post
-  - Through
+  - grabbable
+  - Gate
+  - Lose
   - Win
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -45,6 +45,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: LevelUP
+    uniqueID: 2536555945
+    locked: 0
   - name: Gate
     uniqueID: 3172898859
+    locked: 0
+  - name: Ball
+    uniqueID: 3608506999
+    locked: 0
+  - name: Player
+    uniqueID: 20073567
     locked: 0
