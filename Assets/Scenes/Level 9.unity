@@ -22820,8 +22820,6 @@ MonoBehaviour:
     name: Gate Monster
     sentences:
     - Sekarang bawakan aku Bola berwarna cokelat
-    - 
-    - 
 --- !u!1 &7940466796863001457
 GameObject:
   m_ObjectHideFlags: 0

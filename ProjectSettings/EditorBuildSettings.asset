@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 10.unity
     guid: 85cac2769c1529f4899b325fd2f990cf
+  - enabled: 1
+    path: Assets/Scenes/Bonus.unity
+    guid: 9dc7c14454a2b874c96eb5f09c452a79
   m_configObjects: {}
