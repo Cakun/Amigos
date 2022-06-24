@@ -19,7 +19,7 @@ public class Goal : MonoBehaviour
 
             if (collision.gameObject.layer == LayerMask.NameToLayer("Win"))
             {
-                _gateEmossion.SetBool("isRight", true);
+                _gateEmossion.SetBool("isRight6", true);
 
                 _gateOpen.SetActive(false);
 
@@ -27,7 +27,11 @@ public class Goal : MonoBehaviour
 
             if(collision.gameObject.layer == LayerMask.NameToLayer("Win"))
             {
-                StartCoroutine(waitThenLoad());
+                StartCoroutine(WaitThenLoad());
+            }
+            if (collision.gameObject.layer == LayerMask.NameToLayer("Win"))
+            {
+                _gateEmossion.SetBool("isRight5", true);
             }
 
             if (collision.gameObject.layer == LayerMask.NameToLayer("Lose"))
@@ -36,7 +40,7 @@ public class Goal : MonoBehaviour
             }
             if (collision.gameObject.layer == LayerMask.NameToLayer("Lose"))
             {
-                StartCoroutine(waitThenUnPause());
+                StartCoroutine(WaitThenUnPause());
             }
         }
     }
@@ -51,14 +55,14 @@ public class Goal : MonoBehaviour
 
 
 
-    private IEnumerator waitThenLoad()
+    private IEnumerator WaitThenLoad()
     {
         yield return new WaitForSecondsRealtime(5.0f);
         arrowGate.SetActive(true);
         audioDie.UnPause();
     }
 
-    private IEnumerator waitThenUnPause()
+    private IEnumerator WaitThenUnPause()
     {
         yield return new WaitForSecondsRealtime(5.0f);
         audioDie.UnPause();
